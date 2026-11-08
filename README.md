@@ -24,19 +24,29 @@ The [skill file](.agents/skills/hackstack/SKILL.md) tells an agent which catalog
 Run this from the HackStack checkout with Node.js 22.20 or newer:
 
 ```sh
-npx skills add ./.agents/skills/hackstack --global --agent '*' --skill hackstack --copy
+npx skills add ./.agents/skills/hackstack --global --agent codex claude-code cursor opencode --skill hackstack --copy
 ```
 
-This targets every agent supported by the Skills CLI, including Codex, Claude Code, Cursor, and OpenCode. To target just one, replace `'*'` with its agent ID, such as `codex` or `claude-code`. Open a fresh session in your application repo and ask the agent to use the HackStack skill. Global copies use the GitHub catalog links when the local catalogs are unavailable.
+This example targets Codex, Claude Code, Cursor, and OpenCode. Choose agent IDs that support global installation. A wildcard can select project-only agents and produce a partial install. Open a fresh session in your application repo and ask the agent to use the HackStack skill. Global copies use the GitHub catalog links when the local catalogs are unavailable.
 
 Once the skill is published to the default branch on GitHub, you can install it without a checkout:
 
 ```sh
-npx skills add NexVed/HackStack --global --agent '*' --skill hackstack --copy
+npx skills add NexVed/HackStack --global --agent codex claude-code cursor opencode --skill hackstack --copy
 npx skills list --global
 ```
 
 Re-run the install command to refresh a copied installation. For a client outside the supported list, use the reference checkout instructions below. See the [Skills CLI reference](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#skills-add) and [supported agents](https://github.com/vercel-labs/skills/blob/main/docs/agents.md).
+
+### Install for Eve and PromptScript
+
+Eve and PromptScript require a project-level install. Run this in the application repo where you want to use HackStack:
+
+```sh
+npx skills add NexVed/HackStack --agent eve promptscript --skill hackstack --copy
+```
+
+For an unpublished checkout, replace `NexVed/HackStack` with the path to its `.agents/skills/hackstack` directory.
 
 ### In Codex
 
