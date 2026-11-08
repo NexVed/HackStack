@@ -1010,9 +1010,9 @@ These ten options have an official source confirming a no-card start. Limits are
 | Name | Best for | Type / Language | License and free option | Ease (1-5) | Docs |
 |------|----------|-----------------|-------------------------|------------|------|
 | [Supabase](https://supabase.com/) | Managed PostgreSQL with application APIs | Hosted / PostgreSQL; Mumbai available | Free: 2 active projects, 500 MB database per project; card unverified | 5 | [Docs](https://supabase.com/docs/) |
-| [Neon](https://neon.com/) | See [Relational / SQL](#1-relational--sql) | PostgreSQL; India region unverified | See 1; card unverified | 5 | [Docs](https://neon.com/docs/) |
+| [Neon (Neon DB)](https://neon.com/) | See [Relational / SQL](#1-relational--sql) | PostgreSQL; India region unverified | See 1; [no card](https://neon.com/blog/thousands-of-neon-projects-now-included-in-your-pricing-plan) | 5 | [Docs](https://neon.com/docs/) |
 | [Turso](https://turso.tech/) | See [Relational / SQL](#1-relational--sql) | SQLite-compatible; India region unverified | See 1; no card | 5 | [Docs](https://docs.turso.tech/) |
-| [MongoDB Atlas](https://www.mongodb.com/atlas) | See [Document](#2-document) | MongoDB; India free-region support unverified | See 2; card unverified | 5 | [Docs](https://www.mongodb.com/docs/atlas/) |
+| [MongoDB Atlas](https://www.mongodb.com/atlas) | See [Document](#2-document) | MongoDB; India free-region support unverified | See 2; [no card](https://www.mongodb.com/resources/products/platform/online) | 5 | [Docs](https://www.mongodb.com/docs/atlas/) |
 | [Cloud Firestore](https://firebase.google.com/products/firestore) | See [Document](#2-document) | Document database; India region unverified | See 2; card unverified | 5 | [Docs](https://firebase.google.com/docs/firestore) |
 | [Upstash Redis](https://upstash.com/) | See [Key-Value](#3-key-value) | Redis API; India region unverified | See 3; no-card temporary instance available | 5 | [Docs](https://upstash.com/docs/redis) |
 | [TiDB Cloud](https://www.pingcap.com/tidb/) | See [Distributed SQL](#15-distributed-sql) | MySQL-compatible TiDB; India region unverified | See 15; card unverified | 4 | [Docs](https://docs.pingcap.com/tidbcloud/) |
@@ -1032,6 +1032,35 @@ These ten options have an official source confirming a no-card start. Limits are
 - Choose Upstash Redis if the workload is a serverless cache rather than relational data.
 
 **Notes:** Free-tier figures are linked to provider pricing: [Supabase](https://supabase.com/pricing), [Turso](https://turso.tech/pricing), [MongoDB Atlas](https://www.mongodb.com/pricing), [Firestore](https://firebase.google.com/pricing), [Upstash](https://upstash.com/pricing/redis), [TiDB Cloud](https://www.pingcap.com/pricing/), and [D1](https://developers.cloudflare.com/d1/platform/pricing/). Neon's current allowance is described in its [official announcement](https://neon.com/blog/neon-free-plan-1-gb-per-project); verification on its pricing page remains outstanding. [Supabase lists Mumbai](https://supabase.com/docs/guides/platform/regions), but region availability may vary by plan and capacity. Atlas lists Indian regions, while [free clusters support only a subset](https://www.mongodb.com/docs/atlas/reference/free-shared-limitations/); their availability in India is unverified. [Upstash's pricing page](https://upstash.com/pricing/redis) describes a no-card temporary instance deleted after three days unless claimed; card requirements for a claimed account remain unverified. Confirm regional availability, card requirements, and overage behavior before provisioning.
+
+### Backend platforms with a database
+
+These platforms bundle a database with features such as auth, APIs, storage, or sync. Free limits below describe the database product. Card requirements and regional placement are marked when they could be confirmed.
+
+| Name | Best for | Type / Language | License and free option | Ease (1-5) | Docs |
+|------|----------|-----------------|-------------------------|------------|------|
+| [Convex](https://www.convex.dev/) | Reactive apps with typed backend functions | Hosted / document database, TypeScript | Free: 0.5 GB database storage and 1 GB database I/O/month per team. Card requirement unverified. [Limits](https://docs.convex.dev/production/state/limits) | 5 | [Docs](https://docs.convex.dev/) |
+| [Appwrite](https://appwrite.io/) | App data with permissions and realtime | Hybrid / TablesDB, DocumentsDB, VectorsDB | Cloud Free includes Appwrite's database service. Dedicated managed PostgreSQL and MySQL have separate charges. Free projects pause after one idle week. Card requirement unverified. [Pricing](https://appwrite.io/pricing) | 4 | [Docs](https://appwrite.io/docs) |
+| [InsForge](https://insforge.dev/) | PostgreSQL backend for agent-built apps | Hybrid / PostgreSQL | Cloud Free: 500 MB database and 5 GB monthly bandwidth. No card for Free. Projects pause after one idle week. [Pricing FAQ](https://github.com/InsForge/InsForge/blob/main/docs/pricing.mdx) · [Signup terms](https://insforge.dev/blog/insforge-pricing-update) | 4 | [Docs](https://github.com/InsForge/InsForge) |
+| [InstantDB](https://www.instantdb.com/) | Realtime client queries and local-first sync | Hosted / relational entities, TypeScript | Unlimited free projects with no inactivity pausing or card. Storage and transfer limits unverified here. [Free plan details](https://www.instantdb.com/product/database) | 5 | [Docs](https://www.instantdb.com/docs) |
+| [Nhost](https://nhost.io/) | PostgreSQL with GraphQL and auth | Hybrid / PostgreSQL | Starter: one project, 1 GB database and 5 GB egress. Pauses after one idle week. Card requirement unverified. [Pricing](https://nhost.io/pricing) | 4 | [Docs](https://docs.nhost.io/) |
+| [PocketBase](https://pocketbase.io/) | Small apps on one server | Open source / SQLite, Go | Free self-hosted software. Server and backup costs are separate. [FAQ](https://pocketbase.io/faq/) | 5 | [Docs](https://pocketbase.io/docs/) |
+| [Back4app](https://www.back4app.com/) | Managed Parse backend for mobile and web | Hosted / Parse API | Free: 250 MB database. Card requirement unverified. [Pricing](https://www.back4app.com/pricing/backend-as-a-service) | 4 | [Docs](https://www.back4app.com/docs) |
+| [Firebase Realtime Database](https://firebase.google.com/products/realtime-database) | Live updates over a shared JSON tree | Hosted / JSON tree | Spark: 1 GB stored, 10 GB downloaded/month, and 100 simultaneous connections. No payment method required. [Pricing](https://firebase.google.com/pricing) | 5 | [Docs](https://firebase.google.com/docs/database) |
+| [Baserow](https://baserow.io/) | Spreadsheet-style data with an API | Hybrid / no-code tables | Cloud Free: 3,000 rows per workspace. Card requirement unverified. [Pricing](https://baserow.io/pricing) | 5 | [Docs](https://baserow.io/user-docs) |
+
+### More standalone database hosts
+
+| Name | Best for | Type / Language | License and free option | Ease (1-5) | Docs |
+|------|----------|-----------------|-------------------------|------------|------|
+| [Aiven](https://aiven.io/) | Hosted open-source database engines | Hosted / PostgreSQL, MySQL, Valkey, OpenSearch | PostgreSQL Free: 1 CPU, 1 GB RAM, 1 GB storage, no card. Free MySQL was retired. [PostgreSQL pricing](https://aiven.io/pricing/postgresql) · [Signup details](https://aiven.io/free-postgresql-database) · [MySQL retirement](https://aiven.io/free-mysql-database-retired) | 4 | [Docs](https://aiven.io/docs) |
+| [Render Postgres](https://render.com/postgresql) | Database alongside a Render web service | Hosted / PostgreSQL | Free instance: 1 GB storage, expires after 30 days. Card requirement unverified. [Free instance limits](https://render.com/docs/free) | 4 | [Docs](https://render.com/docs/postgresql) |
+| [Railway](https://railway.com/) | Database containers alongside application services | Hosted / PostgreSQL, MySQL, MongoDB, Redis | Free plan: $1/month resource credit shared across services. Runtime and volume charges draw from that credit. Card requirement unverified. [Plans](https://railway.com/pricing) | 4 | [Docs](https://docs.railway.com/guides/databases) |
+| [PlanetScale](https://planetscale.com/) | Managed SQL with sharding options | Hosted / PostgreSQL, Vitess for MySQL | Postgres starts at $5/month. A general free tier was not found on the pricing page. [Pricing](https://planetscale.com/pricing) | 4 | [Docs](https://planetscale.com/docs) |
+| [Xata](https://xata.io/) | Isolated PostgreSQL branches | Hosted / PostgreSQL | 14-day trial. Trial quotas and card requirement unverified. [Pricing](https://xata.io/pricing) | 4 | [Docs](https://xata.io/docs) |
+| [Google Cloud SQL](https://cloud.google.com/sql) | Managed relational engines on Google Cloud | Hosted / PostgreSQL, MySQL, SQL Server | PostgreSQL trial: one instance per new project for up to 30 days. Active billing required. [Pricing](https://cloud.google.com/sql/pricing) · [Trial terms](https://docs.cloud.google.com/sql/docs/postgres/free-trial-instance) | 3 | [Docs](https://cloud.google.com/sql/docs) |
+
+The new rows were checked on November 8, 2026. India placement for their listed offers remains unverified. For providers already covered elsewhere, see [Astra DB](#4-wide-column), [Qdrant and Pinecone](#7-vector), [CockroachDB Cloud](#1-relational--sql), and [DynamoDB and Azure SQL Database](#16-serverless-database).
 
 ## Deprecated, relicensed, or changed
 
