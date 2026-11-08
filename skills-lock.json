@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "skills": {
+    "hackstack": {
+      "source": "NexVed/HackStack",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/hackstack/SKILL.md",
+      "computedHash": "5f697148e247e92875f0a82d2510f86954b5d921ac38e9a4534ff23a409d300d",
+      "installMode": "copy"
+    }
+  }
+}
