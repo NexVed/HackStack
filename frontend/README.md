@@ -324,6 +324,7 @@ Use **GSAP** for choreographed sequences, **Motion** for React UI transitions, a
 | [Mock Service Worker](https://mswjs.io/) | Mock network requests in development and tests |
 | [Storybook](https://storybook.js.org/docs) | Develop and document components in isolation |
 | [Chromatic](https://chromatic.com/docs/) | Hosted visual review and regression testing |
+| [agent-qa](https://vostride.com) | Natural-language web, Android and iOS QA with persistent [memidex memory](https://vostride.com/docs/agent-qa/memory.md), validated [self-improvement](https://vostride.com/docs/agent-qa/self-improvement.md), and recorded evidence via CLI, local dashboard or MCP. Early-stage; [FSL-1.1-ALv2](https://vostride.com/license.md) restricts competing use. Software is free for permitted use; model/infrastructure costs are separate ([pricing](https://vostride.com/pricing.md), checked 2026-11-08). |
 
 ## 17. Build, lint, format, and package tooling
 
